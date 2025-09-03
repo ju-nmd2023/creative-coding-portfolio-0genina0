@@ -3,5 +3,11 @@
     "file": "experiments/example.js",
     "name": "Name of your experiment",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+
+  {
+    "file": "experiments/pondLily.js",
+    "name": "Pond Lily",
+    "description": "I tried to create a memory of mine from summer. We have a pond in our backyard surrounded by all these beautiful flowers and i was walking there one night and saw a single lilly growing in the middle of the pond. It was small but beautiful and resonated deeply with me. To create this i used the example of the noise dots from class and added some squares in various shades of blue to imitate that reflection of light on water as well as adjusting the sizes and framerate. on top this i used the flower example from class to try and imitate the little pink lily by adjusting the code according to my vision"
   }
 ]
