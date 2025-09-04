@@ -9,12 +9,16 @@ const divider = 10;
 const numRows = 100;
 const numCols = 100;
 
-let flowerSize = 10;
+let flowerSize = 1;
 let amount = 1;
 let gap = 120;
 
 
 let counter = 0;
+
+function pad (){
+
+}
 
 function flower(){
     noStroke();
@@ -22,12 +26,6 @@ function flower(){
 
     for (let y = 0; y < petals; y++){
         for (let x = 0; x < petals; x++){
-
-            //fill(200, 0, 80);
-            //rect(x, y, 40, 15, 10); 
-
-            //fill(240, 0, 80);
-            //rect(x, y, 20, 5, 10); 
 
             fill(255, 138, 170);
             ellipse(x, y, 70, 5);
