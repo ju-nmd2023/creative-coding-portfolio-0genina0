@@ -1,3 +1,4 @@
+// code compiled of example squares from class as well as the 4th vectors example from CC Complexity slides
 let position;
 let velocity;
 let acceleration;
