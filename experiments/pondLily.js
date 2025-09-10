@@ -1,3 +1,4 @@
+//code made by utilising flower example from class as well as the noise example from class
 function setup(){
     createCanvas(innerWidth, innerHeight);
     frameRate(20);
