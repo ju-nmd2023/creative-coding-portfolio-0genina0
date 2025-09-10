@@ -30,10 +30,10 @@ function evilEye(){
 }
 
 //makes it draw some layers but not all
-function drawLayers(x,y,size,layers){
+function drawLayers(x,y,size,layers, hovered = false){
 
     noFill();
-    stroke(255, 105, 180);
+    stroke(hovered ? color(255,255,0) : color(255, 105, 180));
     strokeWeight(1.5);
 
     const variance = size / 100;
@@ -67,8 +67,14 @@ function draw(){
 
     for (let y = 0; y < 10; y++){
         for (let x = 0; x < 10; x ++){
+        const centerX = size / 2 + x * size;
+        const centerY = size / 2 + y *size;
 
-        drawLayers( size / 2 + x * size, size / 2 + y * size, size , layers);  
+        const hovered =
+        mouseX > centerX - size /2 && mouseX < centerX + size / 2 &&
+        mouseY > centerY - size / 2&& mouseY < centerY + size / 2;
+
+        drawLayers(centerX, centerY, size, layers, hovered);  
      }
     }
     const mouse = createVector(mouseX, mouseY);
