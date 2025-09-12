@@ -33,7 +33,7 @@ function evilEye(){
 function drawLayers(x,y,size,layers, hovered = false){
 
     noFill();
-    stroke(hovered ? color(255,255,0) : color(255, 105, 180));
+    stroke(hovered ? color(140,235,100) : color(255, 105, 180));
     strokeWeight(1.5);
 
     const variance = size / 100;
