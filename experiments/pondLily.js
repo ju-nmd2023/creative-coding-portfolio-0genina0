@@ -17,10 +17,6 @@ let gap = 120;
 
 let counter = 0;
 
-function pad (){
-
-}
-
 function flower(){
     noStroke();
     let petals =8;
