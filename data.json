@@ -1,16 +1,21 @@
 [
+{
+  "file": "experiments/squares.js",
+  "name": "Eye in cage of Squares",
+  "description": ""
+},
   {
-    "file": "experiments/pondLily.js",
+    "file": "experiments/flower.js",
+    "name": "flowers tweaking out",
+    "description": ""
+  },
+  {
+    "file": "experiments/flowerver1.js",
     "name": "Pond Lily",
     "description": "I tried to create a memory of mine from summer. We have a pond in our backyard surrounded by all these beautiful flowers and i was walking there one night and saw a single lilly growing in the middle of the pond. It was small but beautiful and resonated deeply with me. To create this i used the example of the noise dots from class and added some squares in various shades of blue to imitate that reflection of light on water as well as adjusting the sizes and framerate. on top this i used the flower example from class to try and imitate the little pink lily by adjusting the code according to my vision"
   },
   {
-    "file": "experiments/evileyeenvyprison.js",
-    "name": "Eye in cage of Squares",
-    "description": ""
-  },
-  {
-    "file": "experiments/noise.js",
+    "file": "experiments/flowerver2.js",
     "name": "shapes and colors the likes of which i've never seen before",
     "description": ""
   },
@@ -20,7 +25,7 @@
     "description": "i was inspired by the way foliage grows on our old stone house. i utilised garrits flow field 03 and changed some values includeing the colours and stroke"
   },
   {
-    "file": "experiments/cherryblossom.js",
+    "file": "experiments/flowver1.js",
     "name": "Cherry blossom season",
     "description": "this variation was made to capture the feeling of taking a walk during cherry blossom season. with a green gate along the road and flower petals twirling in the air. This was made by combining the noise example from class and changing the size, color and opacity as well as adding additional rectangles. the petals were made using garrits flow field 03 example and changing the color and opacity as well as randomising the stroke width to get a fluttering effect.ß"
   }
