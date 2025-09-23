@@ -85,22 +85,11 @@ function drawGate() {
    strokeWeight(2);
    let spacing = 30;
  
-   // Diagonal lines
+   // Diagonal lines for loop
    for (let x = -fenceHeight; x <= width; x += spacing) {
      line(x, height, x + fenceHeight, fenceY);
    }
   }
-
-  //drawing tree trunk
-function treeTrunk(){
-  fill(139,69,19);
-  triangle(
-    width, height,         
-    width - 100, height,   
-    width, 300    
-  );
-  rect(560, 0, 600);
-}
 
 //flow field function
 function generateField() {
@@ -161,8 +150,6 @@ function draw(){
     }
 
      counter += 0.08;
-
-     treeTrunk();
      drawGate();
 
     //for loop for flow field
