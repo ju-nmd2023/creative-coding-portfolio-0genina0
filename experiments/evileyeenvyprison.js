@@ -9,7 +9,7 @@ function setup(){
     velocity = createVector(5,8);
 }
 
-const size = 100;
+const size = 200;
 const layers = 10;
 
 //helps get random value to not draw perfect squares

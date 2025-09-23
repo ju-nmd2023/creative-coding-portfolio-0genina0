@@ -1,4 +1,5 @@
-//the following code is from garrits flow field 03 example
+//the following code is a variation of garrits flow field 03 example and the noise example shown in class
+
 //for theflow field
 class Agent {
     constructor(x, y, maxSpeed, maxForce) {
@@ -105,10 +106,9 @@ function generateField() {
     return field;
   }
 
-  //flow field agent function
-    
+  //flow field agent function  
   function generateAgents() {
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 180; i++) {
       let agent = new Agent(
         Math.random() * innerWidth,
         Math.random() * innerHeight,
@@ -128,7 +128,7 @@ let field;
 let agents = [];
 
 // variable decloration for the noise 
-const size = 8;
+const size = 15;
 const noisedivider = 10;
 const numRows = 100;
 const numCols = 100;

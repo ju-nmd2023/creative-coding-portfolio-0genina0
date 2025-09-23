@@ -21,8 +21,8 @@
   },
   {
     "file": "experiments/cherryblossom.js",
-    "name": "Nature taking back",
-    "description": "i was inspired by the way foliage grows on our old stone house. i utilised garrits flow field 03 and changed some values includeing the colours and stroke"
+    "name": "Cherry blossom season",
+    "description": "this variation was made to capture the feeling of taking a walk during cherry blossom season. with a green gate along the road and flower petals twirling in the air. This was made by combining the noise example from class and changing the size, color and opacity as well as adding additional rectangles. the petals were made using garrits flow field 03 example and changing the color and opacity as well as randomising the stroke width to get a fluttering effect.ß"
   }
 ]
 
