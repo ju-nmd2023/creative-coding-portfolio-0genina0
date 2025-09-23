@@ -1,9 +1,19 @@
 [
-{
+  {
   "file": "experiments/squares.js",
   "name": "Eye in cage of Squares",
   "description": ""
-},
+  },
+  {
+    "file": "experiments/squaresver1.js",
+    "name": "Eye in cage of Squares",
+    "description": ""
+  },
+  {
+    "file": "experiments/squaresver2.js",
+    "name": "Eye in cage of Squares",
+    "description": ""
+  },
   {
     "file": "experiments/flower.js",
     "name": "flowers tweaking out",
