@@ -60,58 +60,63 @@ class Agent {
       pop();
     }
   }
+
+  //size of rocks variables
+  const size = 90;
+  const cols = 10;   
+  const rows = 10; 
+  const gap = 15;
   
   function setup() {
     createCanvas(innerWidth, innerHeight);
-    background(84, 84, 84);
+    background(74, 74, 74);
     field = generateField();
     generateAgents();
-   
+    drawRockGrid();
+  }
+
+  //----------ROCKS----------
+ 
+  //drawing of rocks
+  function drawRockGrid(){
     for (let y = 0; y < 10; y++) {
       for (let x = 0; x < 10; x++) {
-        const centerX = size / 2 + x * size;
-        const centerY = size / 2 + y * size;
-        drawLayers(centerX, centerY, size, layers);
+        const centerX = size / 2 + x * (size + gap);
+        const centerY = size / 2 + y * (size + gap);
+        drawRock(centerX, centerY, size);
       }
     }
   }
-
-  const size = 120;
-  const layers = 6;   
   
   //makes it draw some layers but not all
-  function drawLayers(x,y,size,layers){
+  function drawRock(x,y,size,layers){
   noStroke();
-  fill(65, 65, 65);
+  fill(55, 55, 55);
 
-  const variance = size / 80;
+  const variance = size / 9;
+  const half = size / 2;
 
-  for(let i = 0; i < layers; i++){
-      const s = (size / layers) * i;
-      const half = s / 2;
-    
       beginShape();
       vertex(getRandomValue(x - half, variance), getRandomValue( y - half, variance));
       vertex( getRandomValue(x + half, variance), getRandomValue(y - half, variance));
       vertex( getRandomValue(x + half, variance), getRandomValue( y + half, variance));
       vertex( getRandomValue(x - half, variance), getRandomValue(y + half, variance));
       endShape(CLOSE);
-
-      //full isze of og square devided by layer multiplied by i to ensure squares are not on top of eachother
-  }
 }
 
   function getRandomValue(pos, variance){
     return pos + random(-variance, variance);
 }
+
+//-----FLOW FIELD-------
   
   function generateField() {
     let field = [];
-    noiseSeed(Math.random() * -0.80);
+    noiseSeed(Math.random() * 50);
     for (let x = 0; x < maxCols; x++) {
       field.push([]);
       for (let y = 0; y < maxRows; y++) {
-        const value = noise(x / divider, y / divider) * Math.PI * -0.8;
+        const value = noise(x / divider, y / divider) * Math.PI * 10;
         field[x].push(p5.Vector.fromAngle(value));
       }
     }
@@ -119,10 +124,10 @@ class Agent {
   }
   
   function generateAgents() {
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 50; i++) {
       let agent = new Agent(
         Math.random() * innerWidth,
-        Math.random() * innerHeight,
+        height,
         4,
         0.1
       );
@@ -133,7 +138,7 @@ class Agent {
   const fieldSize = 50;
   const maxCols = Math.ceil(innerWidth / fieldSize);
   const maxRows = Math.ceil(innerHeight / fieldSize);
-  const divider = 4;
+  const divider = 10;
   let field;
   let agents = [];
   
