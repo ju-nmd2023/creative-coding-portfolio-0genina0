@@ -3,7 +3,6 @@
 function setup(){
     createCanvas(innerWidth,innerHeight);
     position = createVector(100,100);
-    frameRate(5);
 }
 
 const size = 120;
@@ -15,13 +14,13 @@ function getRandomValue(pos, variance){
 }
 
 //makes it draw some layers but not all
-function drawLayers(x,y,size,layers, hovered = false){
+function drawLayers(x,y,size,layers){
 
     noFill();
-    stroke(hovered ? color(255) : color(204, 0, 102));
-    strokeWeight(random(0,8));
+    stroke(random(0,200), random(100, 165), random(50, 255));
+    strokeWeight(random(0,3));
 
-    const variance = size / 1;
+    const variance = size / 80;
 
     for(let i = 0; i < layers; i++){
         const s = (size / layers) * i;
@@ -39,20 +38,23 @@ function drawLayers(x,y,size,layers, hovered = false){
 }
 
 function draw(){
-    background(255,128,0);
+    background(0);
 
     for (let y = 0; y < 10; y++){
         for (let x = 0; x < 10; x ++){
         const centerX = size / 2 + x * size;
         const centerY = size / 2 + y *size;
 
-        const hovered =
-        mouseX > centerX - size /2 && mouseX < centerX + size / 2 &&
-        mouseY > centerY - size / 2&& mouseY < centerY + size / 2;
-
-        drawLayers(centerX, centerY, size, layers, hovered);  
+        drawLayers(centerX, centerY, size, layers);  
      }
     }
+
     noLoop();
 
 }
+
+
+
+
+
+
