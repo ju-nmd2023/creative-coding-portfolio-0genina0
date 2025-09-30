@@ -66,15 +66,52 @@ class Agent {
     background(84, 84, 84);
     field = generateField();
     generateAgents();
+   
+    for (let y = 0; y < 10; y++) {
+      for (let x = 0; x < 10; x++) {
+        const centerX = size / 2 + x * size;
+        const centerY = size / 2 + y * size;
+        drawLayers(centerX, centerY, size, layers);
+      }
+    }
   }
+
+  const size = 120;
+  const layers = 6;   
+  
+  //makes it draw some layers but not all
+  function drawLayers(x,y,size,layers){
+  noStroke();
+  fill(65, 65, 65);
+
+  const variance = size / 80;
+
+  for(let i = 0; i < layers; i++){
+      const s = (size / layers) * i;
+      const half = s / 2;
+    
+      beginShape();
+      vertex(getRandomValue(x - half, variance), getRandomValue( y - half, variance));
+      vertex( getRandomValue(x + half, variance), getRandomValue(y - half, variance));
+      vertex( getRandomValue(x + half, variance), getRandomValue( y + half, variance));
+      vertex( getRandomValue(x - half, variance), getRandomValue(y + half, variance));
+      endShape(CLOSE);
+
+      //full isze of og square devided by layer multiplied by i to ensure squares are not on top of eachother
+  }
+}
+
+  function getRandomValue(pos, variance){
+    return pos + random(-variance, variance);
+}
   
   function generateField() {
     let field = [];
-    noiseSeed(Math.random() * 100);
+    noiseSeed(Math.random() * -0.80);
     for (let x = 0; x < maxCols; x++) {
       field.push([]);
       for (let y = 0; y < maxRows; y++) {
-        const value = noise(x / divider, y / divider) * Math.PI * 2;
+        const value = noise(x / divider, y / divider) * Math.PI * -0.8;
         field[x].push(p5.Vector.fromAngle(value));
       }
     }
@@ -82,7 +119,7 @@ class Agent {
   }
   
   function generateAgents() {
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 150; i++) {
       let agent = new Agent(
         Math.random() * innerWidth,
         Math.random() * innerHeight,
@@ -110,4 +147,6 @@ class Agent {
       agent.checkBorders();
       agent.draw();
     }
+
+  
   }
