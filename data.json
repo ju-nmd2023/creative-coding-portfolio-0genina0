@@ -6,18 +6,18 @@
   },
   {
     "file": "experiments/squaresver1.js",
-    "name": "Eye in cage of Squares",
-    "description": ""
+    "name": "Coding eyes",
+    "description": "inspired by how my eyes feel after ive been coding for a long time using squares with a random stroke wigth as well as color and removing the no loop so they continuously change."
   },
   {
     "file": "experiments/squaresver2.js",
-    "name": "Eye in cage of Squares",
-    "description": ""
+    "name": "Colorful squaareees",
+    "description": "inspired by the colors in the elephant scene of a winnie the pooh film using squares with a slight variance and random stroke colors that change when the page is reloaded"
   },
   {
     "file": "experiments/flower.js",
     "name": "flowers tweaking out",
-    "description": ""
+    "description": "inspired by amethysts in a minecraft cave i made some of the ellipses square and got kind of a shiny gem effecvt by randomising the colors of the shapes"
   },
   {
     "file": "experiments/flowerver1.js",
@@ -31,13 +31,13 @@
   },
   {
     "file": "experiments/flowerver2.js",
-    "name": "We've been talking a lot about barbie in marketing so i wanted to create a barbie inspired chessboard pattern by tweeking the flower variables instead of just drawing squares",
-    "description": ""
+    "name": "barbified chess",
+    "description": "We've been talking a lot about barbie in marketing so i wanted to create a barbie inspired chessboard pattern by tweeking the flower variables instead of just drawing squares"
   },
   {
     "file": "experiments/flow.js",
     "name": "One with nature",
-    "description": "i was inspired by the way foliage grows on our old stone house. i utilised garrits flow field 03 and changed some values includeing the colours and stroke"
+    "description": "i was inspired by the way foliage grows on our old stone house. i utilised garrits flow field 03 and changed some values includeing the colours and stroke as well as the particles starting from the edges of the canvas instead of the particles starting in random places. along with this i simulated the stone wall by creating a grid of irregular squares"
   },
   {
     "file": "experiments/flowver1.js",

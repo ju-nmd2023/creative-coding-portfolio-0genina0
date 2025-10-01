@@ -1,4 +1,4 @@
-//the following code is from garrits flow field 03 example
+//the following flow field code is from garrits flow field 03 example 
 class Agent {
     constructor(x, y, maxSpeed, maxForce) {
       this.position = createVector(x, y);
@@ -61,11 +61,11 @@ class Agent {
     }
   }
 
-  //size of rocks variables
-  const size = 90;
+//size of rocks variables
+  const size = 130;
   const cols = 10;   
   const rows = 10; 
-  const gap = 15;
+  const gap = 25;
   
   function setup() {
     createCanvas(innerWidth, innerHeight);
@@ -88,8 +88,7 @@ class Agent {
     }
   }
   
-  //makes it draw some layers but not all
-  function drawRock(x,y,size,layers){
+  function drawRock(x,y,size){
   noStroke();
   fill(55, 55, 55);
 

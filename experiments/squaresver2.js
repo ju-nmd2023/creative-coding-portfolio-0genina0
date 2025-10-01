@@ -5,7 +5,7 @@ function setup(){
     position = createVector(100,100);
 }
 
-const size = 120;
+const size = 150;
 const layers = 10;
 
 //helps get random value to not draw perfect squares
@@ -20,7 +20,7 @@ function drawLayers(x,y,size,layers){
     stroke(random(0,200), random(100, 165), random(50, 255));
     strokeWeight(random(0,3));
 
-    const variance = size / 80;
+    const variance = size / 20;
 
     for(let i = 0; i < layers; i++){
         const s = (size / layers) * i;

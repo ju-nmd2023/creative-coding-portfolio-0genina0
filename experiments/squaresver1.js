@@ -6,7 +6,7 @@ function setup(){
     frameRate(5);
 }
 
-const size = 60;
+const size = 800;
 const layers = 5;
 
 //helps get random value to not draw perfect squares
@@ -18,8 +18,8 @@ function getRandomValue(pos, variance){
 function drawLayers(x,y,size,layers, hovered = false){
 
     noFill();
-    stroke(color(204, 0, 102));
-    strokeWeight(random(0,8));
+    stroke(color(204, random(10, 255), 102));
+    strokeWeight(random(0,70));
 
     const variance = size / 10;
 
