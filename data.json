@@ -2,7 +2,7 @@
   {
   "file": "experiments/squares.js",
   "name": "Eye in cage of Squares",
-  "description": "The eye reprisents envy and the squares changing color represent where you are and how envy follows you. For the coding part i used the square example from the slides and took away the noLoop because I wanted there to be constant movement along with this i changed the variance and stroke. I also used the ball velocity example and made it look like an eye by drawing more ellipses. To make the squares change colours i utilised the mouse hover logic we learned while making our games in year 1"
+  "description": "The eye reprisents envy and the squares changing color represent where you are and how envy follows you. For the coding part i used the square example from the slides and took away the noLoop because I wanted there to be constant movement along with this i changed the variance and stroke. I also used the ball velocity example and made it look like an eye by drawing more ellipses. To make the squares change colours i utilised the mouse hover logic we learned while making our games in year 1."
   },
   {
     "file": "experiments/squaresver1.js",
