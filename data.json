@@ -43,6 +43,6 @@
     "file": "experiments/flowerver1tone.js",
     "name": "Pond Lily With Tone.js",
     "description": "I was inspired by those speakers that show how sound waves make water move so in this case the higher the note the more waves(the noise) is shown. I made this by creating an array of my desired notes and connecting them to a slider. "
-  },
+  }
 ]
 
