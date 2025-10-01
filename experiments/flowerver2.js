@@ -1,3 +1,4 @@
+//the following code is a variation of Bassimas flower example from class
 let position;
 let velocity;
 let acceleration;

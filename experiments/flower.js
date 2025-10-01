@@ -1,3 +1,4 @@
+//the following code is a variation of Bassimas flower example from class
 function setup(){
     createCanvas(innerWidth,innerHeight);
     background(0,0,51);

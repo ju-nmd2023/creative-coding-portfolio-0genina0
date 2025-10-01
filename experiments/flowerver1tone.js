@@ -1,4 +1,4 @@
-//code made by utilising flower example from class as well as the noise example from class
+//code made by utilising flower example from class as well as the noise example from class and the tone.js synth example from garrit schaap
 let slider;
 
 function setup(){
@@ -11,16 +11,17 @@ function setup(){
     slider.size(100);
 }
 
-
+//flower variables
 let size = 15;
 const divider = 10;
 const numRows = 100;
 const numCols = 100;
-
-
 let flowerSize = 1;
 let amount = 1;
 let gap = 120;
+
+//sound variables
+// i got help with coding the following notes array from my friend Ene Sherifi 30 SEP.
 let synth;
 let notes = ["D3","F#3","A3","C#4","D4","F#4","A4","C#5"];
 let previousNote = -1;
@@ -50,8 +51,6 @@ function flower(){
 
 
             rotate(PI / 5);
-
-        
         }
     }
 }

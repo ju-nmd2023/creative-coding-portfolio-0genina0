@@ -2,7 +2,7 @@
   {
   "file": "experiments/squares.js",
   "name": "Eye in cage of Squares",
-  "description": ""
+  "description": "The eye reprisents envy and the squares changing color represent where you are and how envy follows you. For the coding part i used the square example from the slides and took away the noLoop because I wanted there to be constant movement along with this i changed the variance and stroke. I also used the ball velocity example and made it look like an eye by drawing more ellipses. To make the squares change colours i utilised the mouse hover logic we learned while making our games in year 1"
   },
   {
     "file": "experiments/squaresver1.js",
@@ -27,7 +27,7 @@
   {
     "file": "experiments/flowerver1tone.js",
     "name": "Pond Lily With Tone.js",
-    "description": "I tried to create a memory of mine from summer. We have a pond in our backyard surrounded by all these beautiful flowers and i was walking there one night and saw a single lilly growing in the middle of the pond. It was small but beautiful and resonated deeply with me. To create this i used the example of the noise dots from class and added some squares in various shades of blue to imitate that reflection of light on water as well as adjusting the sizes and framerate. on top this i used the flower example from class to try and imitate the little pink lily by adjusting the code according to my vision"
+    "description": "I was inspired by those speakers that show how sound waves make water move so in this case the higher the note the more waves(the noise) is shown. I made this by creating an array of my desired notes and connecting them to a slider. "
   },
   {
     "file": "experiments/flowerver2.js",

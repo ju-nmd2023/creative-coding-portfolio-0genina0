@@ -86,7 +86,7 @@ function drawGate() {
    strokeWeight(2);
    let spacing = 30;
  
-   // Diagonal lines for loop
+   // Diagonal lines forloop
    for (let x = -fenceHeight; x <= width; x += spacing) {
      line(x, height, x + fenceHeight, fenceY);
    }

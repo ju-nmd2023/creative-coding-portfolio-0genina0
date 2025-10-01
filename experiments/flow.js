@@ -1,4 +1,4 @@
-//the following flow field code is from garrits flow field 03 example 
+//the following flow field code is from garrits flow field 03 example as well as the square examplee from class for the rocks
 class Agent {
     constructor(x, y, maxSpeed, maxForce) {
       this.position = createVector(x, y);
