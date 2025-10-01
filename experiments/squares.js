@@ -29,10 +29,11 @@ function evilEye(){
     ellipse(position.x, position.y, 50);
 }
 
-//makes it draw some layers but not all
+// drawing layers of squares as well as setting hovered to false
 function drawLayers(x,y,size,layers, hovered = false){
 
     noFill();
+    //checking if stroke is hovered or not
     stroke(hovered ? color(140,235,100) : color(255, 105, 180));
     strokeWeight(1.5);
 
@@ -69,7 +70,8 @@ function draw(){
         for (let x = 0; x < 10; x ++){
         const centerX = size / 2 + x * size;
         const centerY = size / 2 + y *size;
-
+        
+        //hober logic
         const hovered =
         mouseX > centerX - size /2 && mouseX < centerX + size / 2 &&
         mouseY > centerY - size / 2&& mouseY < centerY + size / 2;
